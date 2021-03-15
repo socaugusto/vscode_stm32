@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "STM32 F0",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "STM32F030x8",
+                "USE_HAL_DRIVER"
+            ],
+            "intelliSenseMode": "gcc-arm",
+            // Environment variable ARMGCC_DIR shall be in place with 
+            // the folder to arm-none-eabi-* tools
+            "compilerPath": "${env:ARMGCC_DIR}/arm-none-eabi-gcc.exe",
+            "compilerArgs":[
+                "-mcpu=cortex-m0",
+                "-mthumb"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
